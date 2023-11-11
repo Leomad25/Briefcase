@@ -1,0 +1,35 @@
+/* ====== */
+/* Colors */
+/* ====== */
+
+/* Default */
+$_color-background: rgb(200, 200, 200);
+$_color-green: rgb(50, 200, 50);
+$_color-gold: rgb(200, 200, 30);
+$_color-font: rgb(0, 0, 0);
+
+    $_color-background-80: rgba(200, 200, 200, 0.8);
+    $_color-green-80: rgba(50, 200, 50, 0.8);
+    $_color-gold-80: rgba(200, 200, 30, 0.8);
+    $_color-font-80: rgba(0, 0, 0, 0.8);
+
+    $_color-background-40: rgba(200, 200, 200, 0.4);
+    $_color-green-40: rgba(50, 200, 50, 0.4);
+    $_color-gold-40: rgba(200, 200, 30, 0.4);
+    $_color-font-40: rgba(0, 0, 0, 0.4);
+
+/* Darkness */
+$_color-background-dark: rgb(50, 50, 50);
+$_color-green-dark: rgb(0, 50, 0);
+$_color-gold-dark: rgb(100, 100, 30);
+$_color-font-dark: rgb(255, 255, 255);
+
+    $_color-background-dark-80: rgba(50, 50, 50, 0.8);
+    $_color-green-dark-80: rgba(0, 50, 0, 0.8);
+    $_color-gold-dark-80: rgba(100, 100, 30, 0.8);
+    $_color-font-dark-80: rgba(255, 255, 255, 0.8);
+
+    $_color-background-dark-40: rgba(50, 50, 50, 0.4);
+    $_color-green-dark-40: rgba(0, 50, 0, 0.4);
+    $_color-gold-dark-40: rgba(100, 100, 30, 0.4);
+    $_color-font-dark-40: rgba(255, 255, 255, 0.4);

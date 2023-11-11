@@ -1,0 +1,13 @@
+<div class="layout{{isDarkness ? ' darkness' : ''}}">
+    <div #header class="layout-header anchored">
+        <ng-content select="app-layout-header"></ng-content>
+    </div>
+    <div #body class="layout-body" (scroll)="onBodyScroll();">
+        <div class="layout-body-header"></div>
+        <ng-content select="app-layout-body"></ng-content>
+        <div class="layout-body-footer"></div>
+    </div>
+    <div class="layout-footer">
+        <ng-content select="app-layout-footer"></ng-content>
+    </div>
+</div>

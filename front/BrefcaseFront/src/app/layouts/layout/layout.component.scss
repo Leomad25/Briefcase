@@ -1,0 +1,94 @@
+@import './../../../colors_palette/main';
+
+.layout {
+    background-color: $_color-background;
+    color: $_color-font;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    .layout-header {
+        background-color: $_color-background;
+        width: calc(100% - 5px);
+        height: 48px;
+        position: fixed;
+        top: 0;
+        border-bottom: solid $_color-font 2px;
+        animation-name: headerNotAnchored;
+        animation-duration: 400ms;
+    }
+
+    .layout-header.anchored {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        animation-name: headerAnchored;
+    }
+
+    .layout-body {
+        height: 100vh;
+        overflow-y: scroll;
+
+        .layout-body-header {
+            width: 100%;
+            height: 80px;
+        }
+
+        .layout-body-footer {
+            width: 100%;
+            height: 50px;
+        }
+    }
+
+    .layout-body::-webkit-scrollbar {
+        width: 5px;
+        background-color: white;
+    }
+
+    .layout-body::-webkit-scrollbar-thumb {
+        background-color: gray;
+    }
+
+    .layout-footer {
+        background-color: $_color-background;
+        position: fixed;
+        width: calc(100% - 5px);
+        height: 50px;
+        bottom: 0;
+    }
+}
+
+.layout.darkness {
+    background-color: $_color-background-dark;
+    color: $_color-font-dark;
+
+    .layout-header {
+        background-color: $_color-background-dark;
+        border-bottom: solid $_color-font-dark 2px;
+    }
+
+    .layout-footer {
+        background-color: $_color-background-dark;
+    }
+}
+
+@keyframes headerAnchored {
+    from {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    to {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+@keyframes headerNotAnchored {
+    from {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    to {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}

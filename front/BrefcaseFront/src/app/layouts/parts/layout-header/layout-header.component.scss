@@ -1,0 +1,30 @@
+.layout-header {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    table {
+        width: 100%;
+        height: 100%;
+
+        td { height: 100%; }
+        .td-left, .td-rigth { min-width: 120px; }
+        .td-center { width: 100%; min-width: 200px; }
+    }
+
+    .layout-header-left,
+    .layout-header-center,
+    .layout-header-rigth {
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+        align-items: center;
+    }
+
+    .layout-header-left { justify-content: left; }
+    .layout-header-center { justify-content: center; }
+    .layout-header-rigth { justify-content: right; }
+}
