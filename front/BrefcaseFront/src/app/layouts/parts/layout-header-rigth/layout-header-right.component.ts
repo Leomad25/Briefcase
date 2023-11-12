@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-layout-header-left',
+  selector: 'app-layout-header-right',
   template: `<ng-content></ng-content>`
 })
 
-export class LayoutHeaderLeftComponent {}
+export class LayoutHeaderRightComponent {}

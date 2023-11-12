@@ -8,13 +8,13 @@
         height: 100%;
 
         td { height: 100%; }
-        .td-left, .td-rigth { min-width: 120px; }
+        .td-left, .td-right { min-width: 120px; }
         .td-center { width: 100%; min-width: 200px; }
     }
 
     .layout-header-left,
     .layout-header-center,
-    .layout-header-rigth {
+    .layout-header-right {
         display: flex;
         height: 100%;
         overflow: hidden;
@@ -26,5 +26,5 @@
 
     .layout-header-left { justify-content: left; }
     .layout-header-center { justify-content: center; }
-    .layout-header-rigth { justify-content: right; }
+    .layout-header-right { justify-content: right; }
 }

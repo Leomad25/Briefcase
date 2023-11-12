@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayoutHeaderRigthComponent } from './layout-header-rigth.component';
+import { LayoutHeaderRigthComponent } from './layout-header-right.component';
 
 describe('LayoutHeaderRigthComponent', () => {
   let component: LayoutHeaderRigthComponent;

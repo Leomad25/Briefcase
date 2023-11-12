@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-layout-body',
-  templateUrl: './layout-body.component.html',
-  styleUrls: ['./layout-body.component.scss']
+  template: `<ng-content></ng-content>`
 })
-export class LayoutBodyComponent {
 
-}
+export class LayoutBodyComponent {}

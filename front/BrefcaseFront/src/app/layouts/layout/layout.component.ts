@@ -7,6 +7,7 @@ import { Component, ElementRef, Input, ViewChild, HostListener } from '@angular/
 })
 export class LayoutComponent {
   @Input() isDarkness:boolean = false;
+  @Input() isLoadingScreen:boolean = false;
   @ViewChild('header') headerElement!: ElementRef;
   @ViewChild('body') bodyElement!: ElementRef;
 
