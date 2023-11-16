@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LayoutHeaderRigthComponent } from './layout-header-right.component';
+import { LayoutHeaderRightComponent } from './layout-header-right.component';
 
 describe('LayoutHeaderRigthComponent', () => {
-  let component: LayoutHeaderRigthComponent;
-  let fixture: ComponentFixture<LayoutHeaderRigthComponent>;
+  let component: LayoutHeaderRightComponent;
+  let fixture: ComponentFixture<LayoutHeaderRightComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LayoutHeaderRigthComponent]
+      declarations: [LayoutHeaderRightComponent]
     });
-    fixture = TestBed.createComponent(LayoutHeaderRigthComponent);
+    fixture = TestBed.createComponent(LayoutHeaderRightComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

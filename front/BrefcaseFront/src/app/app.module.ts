@@ -12,9 +12,12 @@ import { LayoutBodyComponent } from './layouts/parts/layout-body/layout-body.com
 import { LayoutHeaderLeftComponent } from './layouts/parts/layout-header-left/layout-header-left.component';
 import { LayoutHeaderRightComponent } from './layouts/parts/layout-header-rigth/layout-header-right.component';
 import { LayoutHeaderCenterComponent } from './layouts/parts/layout-header-center/layout-header-center.component';
-import { IconComponent } from './comp/icon/icon.component';
-import { LinkComponent } from './comp/link/link.component';
 import { LoadingScreenComponent } from './common/loading-screen/loading-screen.component';
+import { IconComponent } from './components/icon/icon.component';
+import { LinkComponent } from './components/link/link.component';
+import { GraphicComponent } from './components/graphic/graphic.component';
+import { LayoutHeaderBannerComponent } from './layouts/parts/layout-header-banner/layout-header-banner.component';
+import { ImageComponent } from './components/image/image.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { LoadingScreenComponent } from './common/loading-screen/loading-screen.c
     LayoutHeaderCenterComponent,
     IconComponent,
     LinkComponent,
-    LoadingScreenComponent
+    LoadingScreenComponent,
+    GraphicComponent,
+    LayoutHeaderBannerComponent,
+    ImageComponent
   ],
   imports: [
     BrowserModule,

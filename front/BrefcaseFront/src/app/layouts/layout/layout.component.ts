@@ -1,13 +1,15 @@
-import { Component, ElementRef, Input, ViewChild, HostListener } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-layout',
   templateUrl: './layout.component.html',
   styleUrls: ['./layout.component.scss']
 })
+
 export class LayoutComponent {
-  @Input() isDarkness:boolean = false;
-  @Input() isLoadingScreen:boolean = false;
+  @Input() isDarkness: boolean = false;
+  @Input() isLoadingScreen: boolean = false;
+  
   @ViewChild('header') headerElement!: ElementRef;
   @ViewChild('body') bodyElement!: ElementRef;
 

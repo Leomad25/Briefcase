@@ -1,0 +1,9 @@
+<div class="link">
+    <div class="image">
+        <ng-content select="app-icon"></ng-content>
+        <ng-content select="app-graphic"></ng-content>
+    </div>
+    <samp *ngIf="isSeparatorEnable" style="width: 8px;"></samp>
+    <span>{{label}}</span>
+    <div class="click-panel" (click)="clickOnLink()"></div>
+</div>

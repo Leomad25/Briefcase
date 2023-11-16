@@ -1,0 +1,17 @@
+<div *ngIf="isDefault">
+    <app-link *ngIf="isLink"
+        [label]="isDefaultBackButton ? 'Back' : defaultLabel"
+        [isSeparatorEnable]="true"
+        [addressRedirect]="defaultLinkRedirect">
+        <app-icon *ngIf="!defaultIsGraphic && !isDefaultBackButton"
+            [name]="defaultImageName"
+            [size]="defaultImageSize">
+        </app-icon>
+        <app-graphic *ngIf="defaultIsGraphic || isDefaultBackButton"
+            [name]="isDefaultBackButton ? defaultBackIcon : defaultImageName">
+        </app-graphic>
+    </app-link>
+</div>
+<div *ngIf="!isDefault">
+    <ng-content></ng-content>
+</div>

@@ -1,0 +1,27 @@
+@import '../../../colors_palette/main';
+
+.link {
+    display: flex;
+    align-items: center;
+    color: $_color-font;
+    height: 24px;
+    position: relative;
+
+    span { font-size: 24px; }
+
+    .click-panel {
+        position: absolute;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.link.darkness {
+    color: $_color-font-dark;
+}
+
+.link:hover {
+    font-weight: bold;
+    border-bottom: solid $_color-font 1px;
+}

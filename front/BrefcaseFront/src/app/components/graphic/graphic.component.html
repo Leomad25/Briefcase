@@ -1,0 +1,16 @@
+<div #canvas class="graphic">
+    <div class="graphic-layout">
+        <!--<div *ngIf="false" class="vector vector-"></div>-->
+        <div *ngIf="graphicSelected.isArrow.up || graphicSelected.isArrow.down || graphicSelected.isArrow.left || graphicSelected.isArrow.right"
+            class="vector vector-arrow">
+            <div class="{{ graphicSelected.isArrow.up ? ' vector-arrow-up'
+                : (graphicSelected.isArrow.down ? ' vector-arrow-down'
+                : (graphicSelected.isArrow.left ? ' vector-arrow-left'
+                : (graphicSelected.isArrow.right ? ' vector-arrow-right'
+                : '')))}}">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+            </div>
+        </div>
+    </div>
+</div>
