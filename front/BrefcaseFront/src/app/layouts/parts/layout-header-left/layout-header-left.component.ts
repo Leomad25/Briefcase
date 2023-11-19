@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { GraphicList } from 'src/app/components/graphic/graphic.component';
-import { AssetsList } from 'src/app/helpers/assetsList';
+import { AssetsList } from 'src/app/helpers/assetsList.helper';
 
 @Component({
   selector: 'app-layout-header-left',

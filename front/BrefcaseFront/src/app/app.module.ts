@@ -18,6 +18,7 @@ import { LinkComponent } from './components/link/link.component';
 import { GraphicComponent } from './components/graphic/graphic.component';
 import { LayoutHeaderBannerComponent } from './layouts/parts/layout-header-banner/layout-header-banner.component';
 import { ImageComponent } from './components/image/image.component';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ImageComponent } from './components/image/image.component';
     LoadingScreenComponent,
     GraphicComponent,
     LayoutHeaderBannerComponent,
-    ImageComponent
+    ImageComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,

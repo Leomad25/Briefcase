@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { AssetsList } from 'src/app/helpers/assetsList';
+import { AssetsList } from 'src/app/helpers/assetsList.helper';
 
 @Component({
   selector: 'app-icon',

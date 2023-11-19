@@ -1,4 +1,5 @@
-import { Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, Output, ViewChild, EventEmitter } from '@angular/core';
+import { DarknessMode } from 'src/app/helpers/darknessMode.helper';
 
 @Component({
   selector: 'app-layout',
@@ -7,17 +8,20 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 })
 
 export class LayoutComponent {
-  @Input() isDarkness: boolean = false;
   @Input() isLoadingScreen: boolean = false;
   
   @ViewChild('header') headerElement!: ElementRef;
   @ViewChild('body') bodyElement!: ElementRef;
 
+  isDarkness: boolean = DarknessMode.getDarknessMode(); 
+
   onBodyScroll() {
-    if(this.bodyElement.nativeElement.scrollTop > 0) {
-      this.headerElement.nativeElement.classList.remove("anchored");
-    } else {
+    (this.bodyElement.nativeElement.scrollTop > 0) ?
+      this.headerElement.nativeElement.classList.remove("anchored") :
       this.headerElement.nativeElement.classList.add("anchored");
-    }
+  }
+
+  onDarknessModeChange() {
+    DarknessMode.setDarknessMode(this.isDarkness);
   }
 }

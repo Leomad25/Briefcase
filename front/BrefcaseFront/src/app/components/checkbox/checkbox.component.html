@@ -1,0 +1,9 @@
+<div class="checkbox">
+    <div class="checkbox-content">
+        <span [style.font-size]="(fontSize > 0) ? fontSize : '12'">{{label}}</span>
+        <div class="checkbox-icon">
+            <app-icon [name]="iconImage" [size]="(fontSize > 0) ? fontSize : 12"></app-icon>
+        </div>
+    </div>
+    <div class="checkbox-click" (click)="onClick();"></div>
+</div>

@@ -8,7 +8,23 @@
         <div class="layout-body-footer"></div>
     </div>
     <div class="layout-footer">
-        <ng-content select="app-layout-footer"></ng-content>
+        <table>
+            <td class="td-footer">
+                <div>
+                    <ng-content select="app-layout-footer"></ng-content>
+                </div>
+            </td>
+            <td class="td-checkbox">
+                <div>
+                    <app-checkbox
+                        [(value)]="isDarkness"
+                        [label]="'Darkness Mode'"
+                        [fontSize]="24"
+                        (valueChange)="onDarknessModeChange()">
+                    </app-checkbox>
+                </div>
+            </td>
+        </table>
     </div>
 </div>
 <app-loading-screen [isVisible]="isLoadingScreen"></app-loading-screen>

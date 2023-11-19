@@ -1,7 +1,9 @@
 enum IconsList {
     home = 'home.svg',
     spinner = 'spinner.svg',
-    warning = 'warning.svg'
+    warning = 'warning.svg',
+    checked = 'checkbox/checked.svg',
+    unchecked = 'checkbox/unchecked.svg'
 }
 
 enum ImagesList {
