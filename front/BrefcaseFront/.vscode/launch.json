@@ -3,6 +3,12 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "command": "ng serve --port 80",
+      "name": "start :80",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
       "name": "ng serve",
       "type": "chrome",
       "request": "launch",

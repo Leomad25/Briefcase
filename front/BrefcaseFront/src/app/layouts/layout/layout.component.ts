@@ -9,6 +9,8 @@ import { DarknessMode } from 'src/app/helpers/darknessMode.helper';
 
 export class LayoutComponent {
   @Input() isLoadingScreen: boolean = false;
+  @Output('onDarknessModeChange')
+    eventDarknessModeChange: EventEmitter<boolean> = new EventEmitter();
   
   @ViewChild('header') headerElement!: ElementRef;
   @ViewChild('body') bodyElement!: ElementRef;
@@ -23,5 +25,6 @@ export class LayoutComponent {
 
   onDarknessModeChange() {
     DarknessMode.setDarknessMode(this.isDarkness);
+    this.eventDarknessModeChange.emit();
   }
 }

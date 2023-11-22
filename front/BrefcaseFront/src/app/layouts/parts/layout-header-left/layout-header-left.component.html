@@ -1,5 +1,6 @@
 <div *ngIf="isDefault">
     <app-link *ngIf="isLink"
+        [isDarkness]="isDarkness"
         [label]="isDefaultBackButton ? 'Back' : defaultLabel"
         [isSeparatorEnable]="true"
         [addressRedirect]="defaultLinkRedirect">

@@ -9,6 +9,7 @@ import { AssetsList } from 'src/app/helpers/assetsList.helper';
 })
 
 export class LayoutHeaderLeftComponent {
+  @Input() isDarkness: boolean =  false;
   @Input() isDefault: boolean = true;
   @Input() isLink: boolean = true;
   @Input() isDefaultBackButton: boolean = false;

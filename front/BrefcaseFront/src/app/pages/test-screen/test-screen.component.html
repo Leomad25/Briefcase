@@ -1,2 +1,11 @@
-<app-layout>
+<app-layout (onDarknessModeChange)="onDarknessModeChange()">
+    <app-layout-header>
+        <app-layout-header-left [isDarkness]="isDarkness"></app-layout-header-left>
+        <app-layout-header-center>
+            <app-layout-header-banner></app-layout-header-banner>
+        </app-layout-header-center>
+    </app-layout-header>
+    <app-layout-body>
+        
+    </app-layout-body>
 </app-layout>

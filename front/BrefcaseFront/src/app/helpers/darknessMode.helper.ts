@@ -6,8 +6,10 @@ function setDarknessMode($status: boolean): void {
 
 function getDarknessMode(): boolean {
     var result: boolean = false;
-    localStorage.getItem(kayName) == 'true' ?
-        result = true : result = false;
+    const localSave = localStorage.getItem(kayName)
+    localSave ?
+        (localStorage.getItem(kayName) == 'true' ? result = true : result = false) :
+        setDarknessMode(false);
     return result;
 }
 
